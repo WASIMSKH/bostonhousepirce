@@ -1,5 +1,4 @@
 
-AWS Deployment
 # bostonhousepirce
 
 # Software And Tools Requirements
