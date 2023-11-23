@@ -4,6 +4,7 @@ from flask import Flask,request,app,jsonify,url_for,render_template
 import numpy as np
 import pandas as pd
 
+
 app=Flask(__name__)
 # Load the model
 regmodel=pickle.load(open('regmodel.pkl','rb'))
@@ -31,8 +32,13 @@ def predict():
     output=regmodel.predict(final_input)[0]
     return render_template("home.html",prediction_text="The House price prediction is {}".format(output))
 
+<<<<<<< HEAD
 # if __name__=="__main__":
 #     app.run(debug=True)
     
 if __name__=="__main__":      
     app.run(host="0.0.0.0", port=5000) 
+=======
+if __name__=="__main__":
+    app.run(debug=True)
+>>>>>>> 220ce9d90f4296a32515b122f8f1212fb9475fc1
